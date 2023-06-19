@@ -12,5 +12,5 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('', include('elevators.urls')),  
     # Add this line to include your app-specific URLs
-     path('elevators/create/', ElevatorViewSet.as_view({'post': 'create_elevator'}), name='create_elevator'),
+    path('elevators/create/', ElevatorViewSet.as_view({'post': 'create_elevator'}), name='create_elevator')
 ]
